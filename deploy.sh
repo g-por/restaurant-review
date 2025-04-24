@@ -52,9 +52,7 @@ function cleanup() {
 
 while true; do
   echo ""
-  echo "╭──────────────────────────────╮"
   echo "│     Kubernetes Deploy Menu    │"
-  echo "╰──────────────────────────────╯"
   echo "1. Load image"
   echo "2. Deploy PostgreSQL"
   echo "3. Deploy Spring Boot application"
