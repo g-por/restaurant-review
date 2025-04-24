@@ -25,6 +25,10 @@ spec:
               value: postgres
             - name: SPRING_DATASOURCE_PASSWORD
               value: admin
+            - name: LOGGING_FILE_NAME
+              value: /app/logs/app.log
+            - name: LOGGING_LEVEL_ROOT
+              value: INFO
           volumeMounts:
             - name: log-volume
               mountPath: /app/logs
