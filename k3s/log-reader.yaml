@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: log-reader
+spec:
+  containers:
+    - name: log-reader
+      image: busybox
+      command: ["/bin/sh", "-c", "touch /logs/app.log && tail -f /logs/app.log"]
+      volumeMounts:
+        - name: log-volume
+          mountPath: /logs
+  volumes:
+    - name: log-volume
+      hostPath:
+        path: /mnt/data/shared-log
