@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: restaurant-app
-          image: restaurant-review-app:latest
-          imagePullPolicy: Never
+          image: o1drohina/restaurant-review-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
